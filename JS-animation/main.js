@@ -9,15 +9,17 @@
     value: '1turn',
     easing: 'easeInOutSine'
   },
-  
-  
   // backgroundColor:'#000',  //change divs to black one by one
   //opacity: '0.3',  // each time nthe box animatres it will turn transparent after
   delay: function(el, i, l){ return i * 1000},
   autoplay: false,
+  loop: true,
 });
 
-playPause.play();
+document.querySelector('#boxes .play').onclick =
+playPause.play;
+document.querySelector('#boxes .pause').onclick =
+playPause.pause;
 
 /*anime({
   targets: 'div.box.blue',
