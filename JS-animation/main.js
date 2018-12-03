@@ -14,7 +14,7 @@
   // backgroundColor:'#000',  //change divs to black one by one
   //opacity: '0.3',  // each time nthe box animatres it will turn transparent after
   delay: function(el, i, l){ return i * 1000},
-  autoplay: false;
+  autoplay: false,
 });
 
 playPause.play();
